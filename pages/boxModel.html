@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Satisfy&family=Teko:wght@300..700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="../styles.css">
+
+    <title> BOX MODEL </title>
+
+    <style>
+        #box_model {
+            text-decoration: #9090ff underline;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <img id="logoSenac" src="../images/SENAC.png" alt="logo Senac">
+
+        <nav>
+            <a href="../index.html"> Conceitos </a>
+            <a href="../pages/tags.html"> Tags </a>
+            <a href="../pages/boxModel.html" id="box_model"> Box Model </a>
+            <a href="../pages/flexbox.html"> FlexBox </a>
+        </nav>
+    </header>
+
+    <aside>
+        <h1 id="aside_h1"> Sumário: </h1>
+        <ol id="sumario">
+            <li>
+                <a href="#padding"> PADDING </a>
+            </li>
+            <li>
+                <a href="#margin"> MARGIN </a>
+            </li>
+            <li>
+                <a href="#forma_abreviada"> FORMA ABREVIADA </a>
+            </li>
+            <li>
+                <a href="#border"> BORDER </a>
+                <ol class="subtitulos" type="a">
+                    <li value="1"> <a href="#largura"> Largura </a> </li>
+                    <li value="2"> <a href="#estilo"> Estilo </a> </li>
+                    <li value="3"> <a href="#cor"> Cor </a> </li>
+                    <li value="4"> <a href="#radius"> Arredondamento </a> </li>
+                    <li value="5"> <a href="#abreviada"> Forma Abreviada </a> </li>
+                </ol>
+            </li>
+            <li>
+                <a href="#amostra"> PROPRIEDADES APLICADAS </a>
+            </li>
+        </ol>
+
+        <a href="#logoSenac">
+            <img id="subir" src="../images/subir.png" alt="Ir ao Início">
+        </a>
+    </aside>
+
+    <section>
+        <main>
+
+            <h1 id="padding" class="conteudos"> 1. PADDING: </h1>
+            <div class="container">
+                <div class="container_p">
+                    <p>
+                        O <strong class="strong">Padding</strong> é utilizado para definir o espaçamento entre o
+                        conteúdo e sua borda. Ele pode ser aplicado nos quatro lados do elemento:
+                        <ul class="exemplos">
+                            <li>
+                                <strong class="strong">padding</strong>: define o mesmo espaçamento nos quatro
+                                lados entre o elemento e a borda;
+                            </li>
+                            <li> 
+                                <strong class="strong">padding-top</strong>: define o espaçamento
+                                <i class="i">superior</i> de um elemento e a sua borda;
+                            </li>
+                            <li>
+                                <strong class="strong">padding-right</strong>: : define o espaçamento da
+                                <i class="i">direita</i> de um elemento e a sua borda;
+                            </li>
+                            <li>
+                                <strong class="strong">padding-bottom</strong>: define o espaçamento
+                                <i class="i">inferior</i> de um elemento e a sua borda;
+                            </li>
+                            <li>
+                                <strong class="strong">padding-left</strong>: define o espaçamento da
+                                <i class="i">esquerda</i> de um elemento e a sua borda.
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <!----------------- // ----------------- // ----------------- // ----------------->
+
+
+
+
+            <h1 id="margin" class="conteudos"> 2. MARGIN: </h1>
+            <div class="container">
+                <div class="container_p">
+                    <p>
+                        O <strong class="strong">Margin</strong> é utilizado pra definir o espaçamento ao redor
+                        de um elemento HTML. Pode ser aplicada nos quatro lados de um elemento:
+                        <ul class="exemplos">
+                            <li>
+                                <strong class="strong">margin</strong>: define a mesma margem para todos os
+                                lados do elemento;
+                            </li>
+                            <li> 
+                                <strong class="strong">margin-top</strong>: define a margem <i class="i">
+                                superior</i> de um elemento;
+                            </li>
+                            <li>
+                                <strong class="strong">margin-right</strong>: : define a margem <i class="i">
+                                direita</i> de um elemento;
+                            </li>
+                            <li>
+                                <strong class="strong">margin-bottom</strong>: define a margem <i class="i">
+                                inferior</i> de um elemento;
+                            </li>
+                            <li>
+                                <strong class="strong">margin-left</strong>: define a margem <i class="i">
+                                esquerda</i> de um elemento.
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <!----------------- // ----------------- // ----------------- // ----------------->
+
+
+
+
+            <h1 id="forma_abreviada" class="conteudos"> 3. FORMA ABREVIADA: </h1>
+            <div class="container">
+                <div class="container_p">
+                    <p>
+                        Tanto a propriedade Margin quanto a propriedade Padding podem receber até quatro
+                        valores se escritas em sua forma abreviada.
+                    </p>
+    
+                    <p> Se recebe <b>quatro</b> valores: </p>
+                    <div class="representacao">
+                        <ul class="rep_exemplos">
+                            <li>margin: 10px 20px 30px 40px;</li> 
+                            <li>padding: 10px 20px 30px 40px;</li>
+                        </ul>
+                        <img class="valores" src="../images/images_CSS/valores4.png" alt="Representação da Propriedade
+                            Margin/Padding com 4 valores"
+                        >
+                    </div>
+    
+                    <p> Se recebe <b>três</b> valores: </p>
+                    <div class="representacao">
+                        <ul class="rep_exemplos">
+                            <li>margin: 10px 20px 30px;</li> 
+                            <li>padding: 10px 20px 30px;</li>
+                        </ul>
+                        <img class="valores" src="../images/images_CSS/valores3.png" alt="Representação da Propriedade
+                            Margin/Padding com 3 valores"
+                        >
+                    </div>
+                    
+                    <p> Se recebe <b>dois</b> valores: </p>
+                    <div class="representacao">
+                        <ul class="rep_exemplos">
+                            <li>margin: 10px 20px;</li> 
+                            <li>padding: 10px 20px;</li>
+                        </ul>
+                        <img class="valores" src="../images/images_CSS/valores2.png" alt="Representação da Propriedade
+                            Margin/Padding com 2 valores"
+                        >
+                    </div>
+                </div>
+            </div>
+            <!----------------- // ----------------- // ----------------- // ----------------->
+
+
+
+
+            <h1 id="border" class="conteudos"> 4. BORDER: </h1>
+            <div class="container">
+                <div class="container_p">
+                    <p>
+                        A propriedade <strong class="strong">border</strong> é usada para definir a
+                        aparência da borda de um elemento HTML. Ela permite controlar várias características
+                        da borda, como sua cor, espessura e estilo.
+                    </p>
+                </div>
+            </div>
+
+            <!----------------- PRIMEIRO CONTEÚDO ----------------->
+            <ol class="lista_main" type="a">
+                <li id="largura" value="1"> Largura </li>
+            </ol>
+            <div class="container">
+                <div class="container_p">
+                    <p>
+                        A <strong class="strong">largura</strong> da borda pode ser especificada em pixels, em centímetros, em
+                        porcentagem ou usando valores pré-definidos, como thin, medium e thick.
+                        <br>
+                        Exemplos:
+                        <ul class="exemplos">
+                            <li>border-width: 2px; (<i class="i">Largura em Pixels</i>)</li>
+                            <li>border-width: medium; (<i class="i">Largura com Valor Pré-Definido: Médio</i>)</li>
+                            <li>border-width: 10%; (<i class="i">Largura em Porcentagem</i>)</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <!----------------- // ----------------- // ----------------- // ----------------->
+
+
+            <!----------------- SEGUNDO CONTEÚDO ----------------->
+            <ol class="lista_main" type="a">
+                <li id="estilo" value="2"> Estilo </li>
+            </ol>
+            <div class="container">
+                <div class="container_p">
+                    <p> 
+                        Você pode escolher entre vários <strong class="strong">estilos</strong> de borda, como sólido, pontilhado,
+                        tracejado, duplo, etc.
+                        <br>
+                        Exemplos:
+                        <ul class="exemplos">
+                            <li>border-style: solid; (<i class="i">Borda Sólida</i>)</li>
+                            <li>border-style: dotted; (<i class="i">Borda Pontilhada</i>)</li>
+                            <li>border-style: dashed; (<i class="i">Borda Tracejada</i>)</li>
+                            <li>border-style: double; (<i class="i">Borda Dupla</i>)</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <!----------------- // ----------------- // ----------------- // ----------------->
+
+
+            <!----------------- TERCEIRO CONTEÚDO ----------------->
+            <ol class="lista_main" type="a">
+                <li id="cor" value="3"> Cor </li>
+            </ol>
+            <div class="container">
+                <div class="container_p">
+                    <p>
+                        A <strong class="strong">cor</strong> da borda pode ser especificada de várias maneiras, incluindo
+                        nomes de cores, códigos hexadecimais ou valores RGB.
+                        <br>
+                        Exemplos:
+                        <ul class="exemplos">
+                            <li>border-color: red; (<i class="i">Nome de Cor</i>)</li>
+                            <li>border-color: #00ff00; (<i class="i">Código Hexadecimal</i>)</li>
+                            <li>border-color: rgb(255, 0, 0); (<i class="i">Valor RGB</i>)</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <!----------------- // ----------------- // ----------------- // ----------------->
+
+
+            <!----------------- QUARTO CONTEÚDO ----------------->
+            <ol class="lista_main" type="a">
+                <li id="radius" value="4"> Arredondamento </li>
+            </ol>
+            <div class="container">
+                <div class="container_p">
+                    <p>
+                        Também é possível <b>arredondar</b> as bordas, utilizando a propriedade
+                        <strong class="strong">border-radius</strong>.
+                        <br>
+                        Exemplo:
+                        <ul class="exemplos">
+                            <li>
+                                border-radius: 10px; (<i class="i">Borda Arredondada com um raio de 10 Pixels</i>)
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <!----------------- // ----------------- // ----------------- // ----------------->
+
+
+            <!----------------- QUINTO CONTEÚDO ----------------->
+            <ol class="lista_main" type="a">
+                <li id="abreviada" value="5"> Forma Abreviada </li>
+            </ol>
+            <div class="container">
+                <div class="container_p">
+                    <p>
+                        Ao invés de ficar colocando -width, -style, -color ao lado da propriedade border,
+                        podemos usar de <strong class="strong">maneira abreviada</strong>.
+                        <br>
+                        A sintaxe é:
+                        <ul class="exemplos">
+                            <li> border: [largura] [estilo] [cor];</li>
+                        </ul>
+                    </p>
+
+                    <p>
+                        Essa forma abreviada também pode ser usada individualmente nas propriedades
+                        <b>border-top</b>, <b>border-right</b>, <b>border-bottom</b> e <b>border-left</b>.
+                        <br>
+                        Exemplo:
+                        <ul class="exemplos">
+                            <li> border-top: 1px solid blue;</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <!----------------- // ----------------- // ----------------- // ----------------->
+
+
+            
+            <h1 id="amostra" class="conteudos"> 5. PROPRIEDADES APLICADAS: </h1>
+            <div class="container">
+                <div class="container_p">
+                    <p id="A1"> Amostra 1 </p>
+                    <p id="A2"> Amostra 2 </p>
+                    <p id="A3"> Amostra 3 </p>
+                    <p id="A4"> Amostra 4 </p>
+                    <p id="A5"> Amostra 5 </p>
+                    <p id="A6"> Amostra 6 </p>
+                    <p id="A7"> Amostra 7 </p>
+                    <p id="A8"> Amostra 8 </p>
+                </div>
+            </div>
+            <!----------------- // ----------------- // ----------------- // ----------------->
+
+        </main>
+    </section>
+
+    <footer>
+        <p> Feito com carinho por <strong id="Luise">Luise Marques</strong> </p>
+    </footer>
+    
+</body>
+</html>

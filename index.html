@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<HTML lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Satisfy&family=Teko:wght@300..700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title> CONCEITOS </title>
+
+    <style>
+        #conceitos {
+            text-decoration: #9090ff underline;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <img id="logoSenac" src="images/SENAC.png" alt="logo Senac">
+
+        <nav>
+            <a href="index.html" id="conceitos"> Conceitos </a>
+            <a href="pages/tags.html"> Tags </a>
+            <a href="pages/boxModel.html"> Box Model </a>
+            <a href="pages/flexbox.html"> FlexBox </a>
+        </nav>
+    </header>
+
+    <aside>
+        <h1 id="aside_h1"> Sumário: </h1>
+        <ol id="sumario">
+            <li> <a href="#1_html"> HTML </a>
+                <ol class="subtitulos" type="a">
+                    <li value="1"> <a href="#o_que1"> O que é HTML? </a> </li>
+                    <li value="2"> <a href="#tags"> O que são TAGS? </a> </li>
+                    <li value="3"> <a href="#semantica"> O que é a Semântica? </a> </li>
+                </ol>
+            </li>
+            <li> <a href="#2_css"> CSS </a> 
+                <ol class="subtitulos" type="a">
+                    <li value="1"> <a href="#o_que2"> O que é CSS? </a> </li>
+                    <li value="2"> <a href="#boxModel"> O que é Box Model? </a> </li>
+                    <li value="3"> <a href="#flexBox"> O que é FlexBox? </a> </li>
+                </ol>
+            </li>
+        </ol>
+
+        <a href="#logoSenac">
+            <img id="subir" src="images/subir.png" alt="Ir ao Início">
+        </a>
+    </aside>
+
+    <section>
+        <main>
+            <h1 id="1_html" class="conteudos"> 1. HTML: </h1>
+
+            
+            <!----------------- PRIMEIRO CONTEÚDO ----------------->
+            <ol class="lista_main" type="a">
+                <li id="o_que1" value="1"> O que é HTML? </li>
+            </ol>
+            <div class="container_p">
+                <p> É uma <strong class="strong">linguagem de marcação baseada em hipertexto</strong>
+                    - textos com hiperlinks ou links que levam de um conteúdo
+                    para outro;
+                </p>
+
+                <p>
+                    Com HTML, podemos escrever documentos que serão acessados
+                    pelo navegador, portanto, <strong class="strong">é a linguagem da web</strong>;
+                </p>
+
+                <p> O HTML é o <strong class="strong">esqueleto</strong> da página. </p>
+            </div>
+            <!----------------- // ----------------- // ----------------- // ----------------->
+
+
+            <!----------------- SEGUNDO CONTEÚDO ----------------->
+            <ol class="lista_main" type="a">
+                <li id="tags" value="2"> O que são as TAGS? </li>
+            </ol>
+            <div class="container">
+                <div class="container_p">
+                    <p>
+                        São elementos que <strong class="strong">identificam e organizam</strong> um conteúdo
+                        dentro de um arquivo HTML através de uma marcação <strong class="strong">entre os
+                        sinais de < e ></strong>;
+                    </p>
+    
+                    <p>
+                        Elas que <strong class="strong">informam</strong> ao navegador que <strong class="strong">
+                        tipo de estrutura</strong> está sendo construída, podendo conter títulos, parágrafos,
+                        imagens, entre outros;
+                    </p>
+    
+                    <p>
+                        Um <strong class="strong">elemento HTML</strong> é uma TAG.
+                    </p>
+                </div>
+    
+                <div class="container_p">
+                    <p>
+                        <i class="i">Geralmente</i> vêm em pares, com uma <strong class="strong">tag de abertura</strong>
+                        (<i class="i">< tag></i>) e uma <strong class="strong">tag de fechamento</strong>
+                        (<i class="i">< /tag></i>), com o conteúdo da tag entre elas;
+                    </p>
+    
+                    <p>
+                        Sintaxe de uma <strong class="strong">Tag Simples</strong>:
+                        <img id="exemploTag1" src="images/images_HTML/exemploTag1.png" alt="Exemplo de Tag Simples">
+                    </p>
+            
+                    <p>
+                        Sintaxe de uma <strong class="strong">Tag com Atributo</strong>:
+                        <img id="exemploTag2" src="images/images_HTML/exemploTag2.png" alt="Exemplo de Tag com Atributo">
+                    </p>
+    
+                    <p>
+                        Alguns elementos podem ter <strong class="strong">atributos</strong>, que fornecem
+                        <strong class="strong">informações</strong> adicionais sobre como o elemento deve ser
+                        exibido ou comportar-se.
+                    </p>
+                </div>
+    
+                <div class="container_p">
+                    <p>
+                        Os elementos HTML podem ser classificados em dois tipos, de acordo com o seu
+                        posicionamento em tela: <strong class="strong">elementos de bloco</strong> e
+                        <strong class="strong">elementos de linha</strong>.
+                        <ul class="exemplos">
+                            <li>
+                                <i class="i">Elementos de Bloco (block)</i>: são os elementos
+                                que ocupam <b>todo o espaço horizontal disponível</b> no lugar que estão inseridos.
+                                Eles geralmente se iniciam em uma nova linha e <b>empurram todos os elementos
+                                subsequentes para baixo</b>.
+                                <br>
+                                Exemplos: <i class="i">h1</i> ao <i class="i">h6</i>, <i class="i">p</i>,
+                                <i class="i">div</i>, <i class="i">section</i>, <i class="i">footer</i>
+                            </li>
+                            <li>
+                                <i class="i">Elementos de Linha (inline)</i>: são os elementos que ocupam
+                                <b>apenas o espaço necessário</b> para exibir o seu conteúdo. Eles geralmente
+                                são <b>exibidos um ao lado do outro</b> e não iniciam uma nova linha.
+                                <br>
+                                Exemplos: <i class="i">a</i>, <i class="i">img</i>, <i class="i">button</i>,
+                                <i class="i">span</i>, <i class="i">strong</i>, <i class="i">input</i> 
+                            </li>
+                        </ul>
+                        <p>
+                            Para descobrir qual o tipo da tag (inline ou block), basta colocar um texto ao lado da tag de
+                            fechamento e ver como a tag "reage", por exemplo:
+                            <ul class="exemplos">
+                                <li> < h1> Texto < /h1> Texto 2</li>
+                            </ul>
+                        </p>
+                    </p>
+                </div>
+
+            </div>
+            <!----------------- // ----------------- // ----------------- // ----------------->
+
+
+            <!----------------- TERCEIRO CONTEÚDO ----------------->
+            <ol class="lista_main" type="a">
+                <li id="semantica" value="3"> O que é a Semântica? </li>
+            </ol>
+            <div class="container_p">
+                <p>
+                    A Semântica refere-se à utilização de elementos que têm significado específico
+                    e claro para <strong class="strong">descrever o conteúdo da página da web de uma maneira
+                    estruturada</strong>;
+                </p>
+
+                <p>
+                    Ao utilizar a semântica correta em HTML, você está <strong class="strong">indicando</strong>
+                    claramente qual parte do seu conteúdo é um cabeçalho, um parágrafo, uma lista, uma seção,
+                    uma citação, etc.
+                </p>
+
+                <p>Os benefícios de utilizar a Semântica são:
+                    <ul class="exemplos">
+                        <li> Ajuda os navegadores a <strong>renderizarem</strong> corretamente o conteúdo; </li>
+                        <li> Melhora a <strong>acessibilidade</strong> para usuários com deficiência; </li>
+                        <li>
+                            Facilita a <strong>indexação</strong> por parte de mecanismos de busca e
+                            promove uma <strong>melhor compreensão do conteúdo</strong> por parte de
+                            desenvolvedores.
+                        </li>
+                    </ul>
+                </p>
+            </div>
+            <!----------------- // ----------------- // ----------------- // ----------------->
+
+
+            <h1 id="2_css" class="conteudos"> 2. CSS: </h1>
+
+
+            <!----------------- PRIMEIRO CONTEÚDO ----------------->
+            <ol class="lista_main" type="a">
+                <li id="o_que2" value="1"> O que é CSS? </li>
+            </ol>
+            <div class="container">
+                <div class="container_p">
+                    <p> A sigla CSS significa <strong class="strong">Cascading Style Sheets</strong>; </p>
+    
+                    <p>
+                        É  uma linguagem de estilos em <strong class="strong">Cascata</strong> que descreve como
+                        os elementos HTML devem ser exibidos em tela;
+                    </p>
+    
+                    <p>
+                        Através do CSS é possível <strong class="strong">definir propriedades</strong>
+                        como cor, fonte, tamanho, espaçamento e muitos outros aspectos visuais da página;
+                    </p>
+    
+                    <p> 
+                        O CSS pode ser descrito como a <strong class="strong">Roupa</strong> ou
+                        <strong class="strong">Maquiagem</strong> da página, é o que traz o
+                        <strong class="strong">Estilo</strong>.
+                    </p>
+                </div>
+
+                <div class="container_p">
+                    <p>
+                        A sintaxe básica do CSS consiste em regras que definem como os elementos HTML
+                        devem ser apresentados no navegador:
+                        <ol class="exemplos_ol" type="1">
+                            <li>
+                                <i class="i">Seletor</i>: É o elemento HTML ao qual você <strong class="strong">
+                                deseja aplicar estilos</strong>;
+                            </li>
+                            <li>
+                                <i class="i">Bloco de Regras</i>: Um <strong class="strong">conjunto de
+                                declarações</strong> dentro de chaves ({ });
+                            </li>
+                            <li>
+                                <i class="i">Propriedade</i>: A <strong>característica</strong> que você deseja
+                                <strong class="strong">alterar no elemento</strong> HTML;
+                            </li>
+                            <li>
+                                <i class="i">Valor</i>: O valor que você deseja <strong class="strong">atribuir
+                                à propriedade</strong>;
+                            </li>
+                            <li>
+                                <i class="i">Declaração</i>: É a combinação de uma propriedade e um valor separados
+                                por dois pontos (:) e terminados por um ponto e vírgula (;).
+                            </li>
+                        </ol>
+                        <p>
+                            Sintaxe Básica:
+                           <img src="images/images_CSS/sintaxeCss.png" alt="Sintaxe Básica do CSS">
+                        </p>
+                    </p>
+
+                    <p>
+                        Há <strong class="strong">três tipos principais</strong> de seletores:
+                        <ul class="exemplos">
+                            <li>
+                                <i class="i">Por Elemento</i>: Selecionam <strong class="strong">todos</strong>
+                                os elementos daquele tipo. É declarado com o <strong>mesmo nome da tag</strong> HTML;
+                                <p>
+                                    <img src="images/images_CSS/seletor_elemento.png" alt="Representação da Seleção
+                                        por Elemento"
+                                    >
+                                </p>
+                            </li>
+                            <li>
+                                <i class="i">Por Id</i>: Selecionam apenas o <strong class="strong">elemento com o 
+                                id indicado</strong>. É declarado começando <strong>com #</strong>;
+                                <p>
+                                    <img src="images/images_CSS/seletor_id.png" alt="Representação da Seleção por Id">
+                                </p>
+                            </li>
+                            <li>
+                                <i class="i">Por Classe</i>: Selecionam <strong class="strong">todos os elementos com
+                                a classe especificada</strong>. É declarado começando <strong>com ponto</strong>.
+                                <p>
+                                    <img src="images/images_CSS/seletor_classe.png" alt="Representação da Seleção por
+                                        Classe"
+                                    >
+                                </p>
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+
+                <div class="container_p">
+                    <p>
+                        Há <strong class="strong">três formas</strong> de inserção do CSS:
+                        <ul class="exemplos">
+                            <li>
+                                <i class="i">Inline</i>: O CSS é inserido <strong class="strong">diretamente
+                                nos elementos HTML</strong> usando o atributo <strong>style</strong>.
+                                <p>
+                                    <img src="images/images_CSS/css_inline.png" alt="Representação da
+                                        Inserção do CSS em Linha"
+                                    >
+                                </p>
+                            </li>
+                            <li>
+                                <i class="i">Embutido</i>: O CSS é incluído dentro da <strong class="strong">tag
+                                style no cabeçalho head</strong> do documento HTML.
+                                <p>
+                                    <img src="images/images_CSS/css_embutido.png" alt="Representação da Inserção
+                                        do CSS de forma Embutida"
+                                    >
+                                </p>
+                            </li>
+                            <li>
+                                <i class="i">Externo</i>: : O CSS é colocado em um <strong class="strong">arquivo
+                                separado com a extensão .css</strong> e, em seguida, <strong class="strong">incluído
+                                no documento HTML usando a tag < link></strong>.
+                                <p>
+                                    <img src="images/images_CSS/css_externo.png" alt="Representação da Inserção do
+                                        CSS de forma Externa"
+                                    >
+                                </p>
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <!----------------- // ----------------- // ----------------- // ----------------->
+
+
+            <!----------------- SEGUNDO CONTEÚDO ----------------->
+            <ol class="lista_main" type="a">
+                <li id="boxModel" value="2"> O que é Box Model? </li>
+            </ol>
+            <div class="container_p">
+                <p>
+                    O Modelo de Caixa (ou Box Model) é um conceito fundamental no CSS que nos
+                    <strong class="strong">descreve, visualmente, como um elemento HTML é representado em
+                    tela</strong>.
+                </p>
+
+                <p>
+                    Cada elemento é ilustrado como uma <b>caixa</b> retangular que pode ter
+                    margens, bordas, preenchimento e o conteúdo interno:
+                    <img id="img_boxModel" src="images/images_CSS/boxModel.png" alt="Box Model Representação">
+                </p>
+
+                <p>Onde:
+                    <ul class="exemplos">
+                        <li>
+                            Conteúdo (<i class="i">content</i>): é o <strong class="strong">conteúdo</strong>
+                            real dentro da caixa. Pode ser um texto, uma imagem, etc;
+                        </li>
+                        <li>
+                            Preenchimento (<i class="i">padding</i>): é usado para criar um espaçamento entre
+                            <strong class="strong">conteúdo e a borda</strong>;
+                        </li>
+                        <li>
+                            Borda (<i class="i">border</i>): é usada para criar uma separação visual ao
+                            <strong class="strong">redor do elemento</strong>;
+                        </li>
+                        <li>
+                            Margem (<i class="i">margin</i>): é usada para criar espaçamento entre a 
+                            <strong class="strong">borda e os elementos vizinhos</strong>.
+                        </li>
+                    </ul>
+                </p>
+
+            </div>
+            <!----------------- // ----------------- // ----------------- // ----------------->
+
+
+            <!----------------- TERCEIRO CONTEÚDO ----------------->
+            <ol class="lista_main" type="a">
+                <li id="flexBox" value="3"> O que é FlexBox? </li>
+            </ol>
+            <div class="container">
+                <div class="container_p">
+                    <p>
+                        O <strong class="strong">Flexbox</strong> é um recurso do CSS que vai nos ajudar a criar
+                        layouts mais flexíveis e responsivos;
+                    </p>
+    
+                    <p>
+                        Com ele é possível <strong class="strong">organizar e alinhar</strong> os elementos
+                        de uma página de uma maneira dinâmica.
+                    </p>
+                </div>
+                
+                <div class="container_p">
+                    <p>
+                        <strong class="strong">Container Flexível</strong>:
+                        <ul class="exemplos">
+                            <li> Um elemento HTML que contém itens flexíveis; </li>
+                            <li> É transformado em um container flexível usando a propriedade
+                                <i class="i">display: flex</i> :
+                            </li>
+                        </ul>
+                        <img id="display_flex" src="images/images_CSS/flexbox.png" alt="Propriedade display do Flexbox">
+                    </p>
+    
+                    <p>
+                        <strong class="strong">Itens Flexíveis</strong>:
+                        <ul class="exemplos">
+                            <li>
+                                Os elementos filhos diretos do container flexível são chamados de
+                                itens flexíveis;
+                            </li>
+                            <li> Eles se comportam de acordo com as propriedades do Flexbox. </li>
+                        </ul>
+                    </p>
+                </div>
+                
+                <div class="container_p">
+                    <p>
+                        Quando usamos o FlexBox, liberamos algumas <strong class="strong">propriedades
+                        específicas</strong> que só podem ser usadas em containers flexíveis:
+                        <ul class="exemplos">
+                            <li>
+                                <strong class="strong">Justify-Content</strong>: é responsável por
+                                definir como os elementos devem ser alinhados ao longo do eixo principal
+                                (de maneira <i class="i">vertical</i>);
+                            </li>
+                            <li>
+                                <strong class="strong">Align-Items</strong>: usamos para alinhar os itens
+                                no eixo transversal (de maneira <i class="i">horizontal</i>).
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <!----------------- // ----------------- // ----------------- // ----------------->
+
+        </main>
+    </section>
+
+
+    <footer>
+        <p> Feito com carinho por <strong id="Luise">Luise Marques</strong> </p>
+    </footer>
+
+</body>
+
+</HTML>

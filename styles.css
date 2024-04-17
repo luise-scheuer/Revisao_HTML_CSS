@@ -1,0 +1,510 @@
+body {
+    background-color: #ffe4aa;
+    margin: 0;
+
+    font-family: 'Teko', sans-serif;
+    line-height: 40px;
+    letter-spacing: 2px;
+}
+
+footer {
+    background-color: #a8eeff;
+    
+    position: fixed;
+    bottom: 0px;
+
+    border-top: 2px #2323ac dashed;
+    width: 100%;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    font-size: 20px;
+    margin: 5px;
+}
+
+#Luise {
+    font-weight: 600;
+    text-decoration: wavy underline #2323ac 2px;
+}
+
+header {
+    background-color: #7fc1ff;
+    height: 100px;
+    padding: 0 25px;
+
+    border-bottom: 2px #2323ac dashed;
+
+    /* FlexBox */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    /* background-color: aquamarine; */
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+nav a {
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+#logoSenac {
+    /* background-color: aqua; */
+    width: 100px;
+    height: 60px;
+    margin-left: 50px;
+}
+
+aside {
+    background-color: #aad9ff;
+
+    float: right;
+    position: fixed;
+    right: 20px;
+
+    margin: 10px;
+    width: 250px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px #2323ac dashed;
+}
+
+#aside_h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+#sumario {
+    /* background-color: rgb(30, 73, 59); */
+    width: 200px;
+    margin: 0;
+    padding: 0 5px;
+
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: 500;
+    margin-left: 10px;
+
+}
+
+#subir {
+    width: 50px;
+    height: 50px;
+    color: black;
+    background-color: #7fc1ff;
+    border: 2px #2323ac dashed; /*#09096d*/
+    border-radius: 100%;
+
+    position: fixed;
+    right: 125px;
+    bottom: 60px;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+.subtitulos li {
+    font-size: 20px;
+}
+
+section {
+    /* background-color: #f8f87d; */
+    margin: 10px 50px 100px;
+    padding: 0 5px ;
+    width: 1000px;
+}
+
+/* main {
+    background-color: #b2f5d5;
+} */
+
+.conteudos {
+    font-size: 25px;
+    margin: 0;
+    /* background-color: rgb(51, 128, 102); */
+}
+
+.lista_main {
+    margin: 0;
+    /* background-color: #a13737; */
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.container_flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_p{
+    width: 800px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    font-size: 25px;
+    text-indent: 30px;
+}
+
+main p {
+    margin: 0;
+    /* background-color: antiquewhite; */
+}
+
+.strong, .i {
+    text-decoration: underline;
+}
+
+
+p img {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.exemplos {
+    /* background-color: #f8f87d; */
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 30px;
+    list-style: inside;
+}
+
+.exemplos_ol {
+    /* background-color: #f8f87d; */
+    margin: 0 auto;
+    
+    font-size: 20px;
+    line-height: 30px;
+}
+
+ul li {
+    margin: 0;
+    width: 720px;
+}
+
+#estruturaBasica {
+    margin: 10px auto 0;
+    width: 550px;
+    height: 250px;
+}
+
+#img_boxModel {
+    margin: 0 auto;
+    width: 300px;
+    height: 200px;
+}
+
+.representacao {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.rep_exemplos {
+    margin: 0;
+    width: 300px;
+
+    font-size: 20px;
+    line-height: 30px;
+    list-style: inside;
+}
+
+.valores {
+    margin: 0;
+    width: 190px;
+    height: 100px;
+}
+
+#display_flex {
+    margin: 0 auto;
+    width: 200px;
+    height: 100px;
+}
+
+#tags_h {
+    margin: 0 auto 10px;
+    text-align: center;
+}
+
+#tags_h h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+#container_tags {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#rep_semanticas {
+    margin: 0 auto;
+    width: 350px;
+}
+
+#formulario {
+    width: 400px;
+    margin: 0 auto;
+}
+
+img {
+    margin: 0 auto 10px;
+}
+
+.documentacao {
+    color: #37adad;
+    text-decoration: underline dotted;
+}
+
+#A1 {
+    border: 2px solid #b40e0e;
+    padding: 20px;
+    margin: 10px;
+    background-color: #6363e4;
+    color: aqua;
+    text-align: center;
+}
+
+#A2 {
+    background-color: #c7a0ec;
+    padding: 10px;
+    margin: 15px;
+    width: 300px;
+    height: 50px;
+    border: 1px solid gray;
+    font: 20px "Arial";
+    text-align: end;
+}
+
+#A3 {
+    background-color: #53cc53;
+    padding: 15px;
+    margin: 5px;
+    border: 3px double #71ff6c; /*#1d1d5f*/
+    border-radius: 3px;
+    font: bolder 15px "Arial";
+    color: white; 
+}
+
+#A4 {
+    padding: 10px;
+    margin: 20px;
+    background-color: antiquewhite;
+    list-style: circle inside;
+    color: #e46363;
+    border: 1px solid black;
+}
+
+#A5 {
+    padding: 30px;
+    border: 4px double #09096b;
+    background-color: #ffff84;
+    text-align: center;
+    color: #ffa600;
+}
+
+#A6 {
+    padding: 15px;
+    border: 5px dashed black;
+    border-radius: 10px;
+    background-color: gray;
+    text-align: center;
+}
+
+#A7 {
+    padding: 20px;
+    margin: 30px;
+    background-color: #b40e0e;
+    border: 10px dotted green;
+    color: #ffff84;
+    text-align: end;
+}
+
+#A8 {
+    padding: 20px;
+    border: 3px outset black;
+    background-color: orange;
+    text-align: center;
+}
+
+.amostra {
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.amostra img {
+    width: 300px;
+    height: 80px;
+    margin: 0;
+}
+
+.container1 {
+    height: 80px;
+    width: 400px;
+    background-color: #8888ff;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px;
+}
+
+.container2 {
+    height: 80px;
+    width: 400px;
+    background-color: #8888ff;
+    border: 1px solid gray;
+    display: flex;
+    /*gap: 40px;*/ /*coloca um espaço entre os elementos, ignorando começo e fim*/
+    justify-content: flex-end;
+    margin: 10px;
+}
+
+.container3 {
+    height: 80px;
+    width: 400px;
+    background-color: #8888ff;
+    border: 1px solid gray;
+    display: flex;
+    /*gap: 40px;*/ /*coloca um espaço entre os elementos, ignorando começo e fim*/
+    justify-content: center;
+    margin: 10px;
+}
+
+.container4 {
+    height: 80px;
+    width: 400px;
+    background-color: #8888ff;
+    border: 1px solid gray;
+    display: flex;
+    /*gap: 40px;*/ /*coloca um espaço entre os elementos, ignorando começo e fim*/
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.container5 {
+    height: 80px;
+    width: 400px;
+    background-color: #8888ff;
+    border: 1px solid gray;
+    display: flex;
+    /*gap: 40px;*/ /*coloca um espaço entre os elementos, ignorando começo e fim*/
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.container6 {
+    height: 80px;
+    width: 400px;
+    background-color: #8888ff;
+    border: 1px solid gray;
+    display: flex;
+    /*gap: 40px;*/ /*coloca um espaço entre os elementos, ignorando começo e fim*/
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+.container7 {
+    height: 80px;
+    width: 400px;
+    background-color: #8888ff;
+    border: 1px solid gray;
+    display: flex;
+    /*gap: 40px;*/ /*coloca um espaço entre os elementos, ignorando começo e fim*/
+    align-items: flex-start;
+    margin: 10px;
+}
+
+.container8 {
+    height: 80px;
+    width: 400px;
+    background-color: #8888ff;
+    border: 1px solid gray;
+    display: flex;
+    /*gap: 40px;*/ /*coloca um espaço entre os elementos, ignorando começo e fim*/
+    align-items: flex-end;
+    margin: 10px;
+}
+
+.container9 {
+    height: 80px;
+    width: 400px;
+    background-color: #8888ff;
+    border: 1px solid gray;
+    display: flex;
+    /*gap: 40px;*/ /*coloca um espaço entre os elementos, ignorando começo e fim*/
+    align-items: center;
+    margin: 10px;
+}
+
+.container10 {
+    height: 80px;
+    width: 400px;
+    background-color: #8888ff;
+    border: 1px solid gray;
+    display: flex;
+    /*gap: 40px;*/ /*coloca um espaço entre os elementos, ignorando começo e fim*/
+    align-items: stretch;
+    margin: 10px;
+}
+
+.caixa {
+    background-color: #c1c1ff;
+    margin: 2px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa2 {
+    background-color: #c1c1ff;
+    margin: 2px;
+    width: 50px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+

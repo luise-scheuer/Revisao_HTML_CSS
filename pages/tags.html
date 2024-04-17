@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Satisfy&family=Teko:wght@300..700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles.css">
+
+    <title> TAGS </title>
+
+    <style>
+        #tags {
+            text-decoration: #9090ff underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img id="logoSenac" src="../images/SENAC.png" alt="logo Senac">
+
+        <nav>
+            <a href="../index.html"> Conceitos </a>
+            <a href="../pages/tags.html" id="tags"> Tags </a>
+            <a href="../pages/boxModel.html"> Box Model </a>
+            <a href="../pages/flexbox.html"> FlexBox </a>
+        </nav>
+    </header>
+
+    <aside>
+        <h1 id="aside_h1"> Sumário: </h1>
+        <ol id="sumario">
+            <li> <a href="#1_html"> HTML </a>
+                <ol class="subtitulos" type="a">
+                    <li value="1"> <a href="#tags_basicas"> Tags Básicas </a> </li>
+                    <li value="2"> <a href="#tags_titulos"> Tags de Título </a> </li>
+                    <li value="3"> <a href="#tags_texto"> Tags de Texto </a> </li>
+                    <li value="4"> <a href="#tags_semanticas"> Tags Semânticas </a> </li>
+                    <li value="5"> <a href="#tags_forms"> Tags de Formulário </a> </li>
+                    <li value="6"> <a href="#outras_tags"> Outras tags </a> </li>
+                </ol>
+            </li>
+            <li> <a href="#2_css"> CSS </a>
+                <ol class="subtitulos" type="a">
+                    <li value="1"> <a href="#comuns"> Propriedades mais Comuns </a> </li>
+                    <li value="2"> <a href="#position"> Propriedade Position </a> </li>
+                    <li value="3"> <a href="#documentacao"> Documentação </a></li>
+                </ol>
+            </li>
+        </ol>
+
+        <a href="#logoSenac">
+            <img id="subir" src="../images/subir.png" alt="Ir ao Início">
+        </a>
+    </aside>
+
+    <section>
+        <main>
+            <h1 id="1_html" class="conteudos"> 1. HTML: </h1>
+
+            <!----------------- PRIMEIRO CONTEÚDO ----------------->
+            <ol class="lista_main" type="a">
+                <li id="tags_basicas" value="1"> Tags Básicas </li>
+            </ol>
+            <div class="container_p">
+                <p>As tags básicas de um documento HTML são:</p>
+                <ul class="exemplos">
+                    <li>
+                        <i class="i">< !DOCTYPE html></i>: informa o navegador que é um <strong class="strong">
+                        documento HTML5</strong>;
+                    </li>
+    
+                    <li>
+                        <i class="i">< html></i>: define o <strong class="strong">início e o fim</strong>
+                        de um documento HTML;
+                    </li>
+    
+                    <li>
+                        <i class="i">< head></i>: define a <strong class="strong">seção de cabeçalho</strong>
+                        onde colocamos o título, link da fonte, entre outros;
+                    </li>
+    
+                    <li>
+                        <i class="i">< meta></i>: permite <strong class="strong">inserir metadados</strong>
+                        no documento;
+                    </li>
+    
+                    <li>
+                        <i class="i">< title></i>: define o <strong class="strong">título da página</strong>
+                        que aparece na guia do seu navegador;
+                    </li>
+    
+                    <li>
+                        <i class="i">< body></i>: define a <strong class="strong">seção do corpo do documento
+                        </strong>, onde todo o conteúdo visível da página é colocado.
+                    </li>
+                </ul>
+                <p>
+                    Estrutura Básica:
+                    <img id="estruturaBasica" src="../images/images_HTML/estruturaBasica.png" alt="Estrutura
+                        Básica do arquivo HTML"
+                    >
+                </p>
+            </div>
+            <!----------------- // ----------------- // ----------------- // ----------------->
+
+
+            <!----------------- SEGUNDO CONTEÚDO ----------------->
+            <ol class="lista_main" type="a">
+                <li id="tags_titulos" value="2"> Tags de Título </li>
+            </ol>
+            <div id="tags_h"> <!-- class="container_tags"-->
+                <h1> Isso é um título de nível 1 COM PROBLEMA </h1>
+                <h2> Isso é um título de nível 2 </h2>
+                <h3> Isso é um título de nível 3 </h3>
+                <h4> Isso é um título de nível 4 </h4>
+                <h5> Isso é um título de nível 5 </h5>
+                <h6> Isso é um título de nível 6 </h6>
+            </div>
+            <!----------------- // ----------------- // ----------------- // ----------------->
+
+
+            <!----------------- TERCEIRO CONTEÚDO ----------------->
+            <ol class="lista_main" type="a">
+                <li id="tags_texto" value="3"> Tags de Texto </li>
+            </ol>
+            <div id="container_tags">
+                <p> Essa é a tag <i class="i">< p></i>. Ela define um parágrafo; </p>
+                <span> O <i class="i">< span></i> é usado para colocar estilização; </span>
+                <b> O <i class="i">< b></i> deixa o texto em negrito; </b>
+                <i> O <i class="i">< i></i> deixa o texto em itálico; </i>
+                <strong>
+                    O <i class="i">< strong></i> indica que é algo importante e deixa o texto
+                    em negrito.
+                </strong>
+            </div>
+            <!----------------- // ----------------- // ----------------- // ----------------->
+
+
+            <!----------------- QUARTO CONTEÚDO ----------------->
+            <ol class="lista_main" type="a">
+                <li id="tags_semanticas" value="4"> Tags Semânticas </li>
+            </ol>
+            <div class="container_p">
+                <p> São tags com um significado claro em relação ao conteúdo que elas envolvem: </p>
+                <ul class="exemplos">
+                    <li>
+                        <i class="i">
+                            < header>
+                        </i> : define o <strong class="strong">cabeçalho</strong> da
+                        página, geralmente contém o logo, o título, etc;
+                    </li>
+                    <li>
+                        <i class="i">
+                            < nav>
+                        </i> : define uma seção de <strong class="strong">navegação</strong>
+                        da página;
+                    </li>
+                    <li>
+                        <i class="i">
+                            < main>
+                        </i> : define a seção <strong class="strong">principal do conteúdo
+                        </strong> da página;
+                    </li>
+                    <li>
+                        <i class="i">
+                            < section>
+                        </i> : define uma seção de <strong class="strong">conteúdos
+                        </strong> da página;
+                    </li>
+                    <li>
+                        <i class="i">
+                            < main>
+                        </i> : define uma seção de <strong class="strong">conteúdo
+                            independente e completo</strong>, um post, por exemplo;
+                    </li>
+                    <li>
+                        <i class="i">
+                            < aside>
+                        </i> : define uma seção com <strong class="strong">conteúdo
+                            complementar</strong>, <strong class="strong">um menu lateral</strong>, por exemplo;
+                    </li>
+                    <li>
+                        <i class="i">
+                            < footer>
+                        </i> : define o <strong class="strong">rodapé</strong> da página,
+                        com informações de contato, copyright, etc.
+                    </li>
+                </ul>
+                <img id="rep_semanticas" src="../images/images_HTML/rep_semanticas.png" alt="Representação
+                    das Tags Semânticas"
+                >
+            </div>
+            <!----------------- // ----------------- // ----------------- // ----------------->
+
+
+            <!----------------- QUINTO CONTEÚDO ----------------->
+            <ol class="lista_main" type="a">
+                <li id="tags_forms" value="5"> Tags de Formulário </li>
+            </ol>
+            <div class="container_p">
+                <p>
+                    Muitas vezes são usados para <strong class="strong">capturar dados dos usuários
+                    </strong> através da web;
+                </p>
+                <p>
+                    Pode conter campos de texto, caixa de seleção, botões, entre outros elementos, tais como:
+                    <ul class="exemplos">
+                        <li>
+                            <i class="i"> < form></i>: define o <strong class="strong">início</strong> de
+                            um formulário;
+                        </li>
+                        <li>
+                            <i class="i">< fieldset></i>: <strong class="strong">agrupa elementos</strong>
+                            de um formulário;
+                        </li>
+                        <li>
+                            <i class="i">< legend></i>: <strong class="strong">nomeia e descreve</strong>
+                            o conteúdo agrupado;
+                        </li>
+                        <li>
+                            <i class="i">< label></i>: nomeia e descreve um <strong class="strong">elemento
+                            de entrada</strong> do formulário;
+                        </li>
+                        <li>
+                            <i class="i">< input></i>: define um <strong class="strong">campo que vai receber
+                            dados</strong> do usuário.
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    Exemplo de Formulário:
+                    <img id="formulario" src="../images/images_HTML/formulario.png" alt="Exemplo de um Formulario">
+                </p>
+                <p>
+                    O elemento <i class="i">< input></i> recebe um atributo <strong class="strong">type</strong>
+                    que define a maneira com que esse campo se comporta. O tipo
+                    <strong class="strong">padrão é um campo de texto</strong>, mas temos uma variedade
+                    de outros valores:
+                    <ul class="exemplos">
+                        <li>
+                            <i class="i">password</i>: cria um campo de <strong class="strong">entrada de
+                            senha</strong> onde o que o usuário digita é <strong>ocultado</strong>;
+                        </li>
+                        <li>
+                            <i class="i">email</i>: cria um campo de <strong class="strong">entrada de
+                            e-mail</strong> que verifica se o valor preenchido é um <strong>e-mail válido</strong>;
+                        </li>
+                        <li>
+                            <i class="i">date</i>: cria um campo de entrada que só aceita
+                            <strong class="strong">datas</strong>;
+                        </li>
+                        <li>
+                            <i class="i">number</i>: cria um campo de entrada que só aceita
+                            <strong class="strong">números</strong>;
+                        </li>
+                        <li>
+                            <i class="i">checkbox</i>: cria uma <strong class="strong">caixa de marcação</strong>,
+                            onde é possível marcar/desmarcar <strong>várias opções</strong>;
+                        </li>
+                        <li>
+                            <i class="i">button</i>: cria um <strong class="strong">botão</strong>;
+                        </li>
+                        <li>
+                            <i class="i">submit</i>: é responsável por <strong class="strong">enviar os dados
+                            do formulário</strong>.
+                        </li>
+                    </ul>
+                    <p> 
+                        Podemos enviar os dados de um formulário de duas maneiras:
+                        <ul class="exemplos">
+                            <li> Passando um <i class="i">type="submit"</i> para um input</li>
+                            <p>ou</p>
+                            <li>
+                                Adicionando um botão, pela tag <i class="i">< button></i> que por si só
+                                já é identificado como um submit.
+                            </li>
+                        </ul>
+                    </p>
+                </p>
+            </div>
+            <!----------------- // ----------------- // ----------------- // ----------------->
+
+
+            <!----------------- SEXTO CONTEÚDO ----------------->
+            <ol class="lista_main" type="a">
+                <li id="outras_tags" value="6"> Outras Tags </li>
+            </ol>
+            <div class="container_p">
+                <p>
+                    Isso é uma div: é uma tag de <strong class="strong">marcação</strong> usada para
+                    definir uma <strong class="strong">seção ou um bloco de conteúdo </strong>;
+                </p>
+                <p>
+                    Ela não é uma tag semântica, mas <strong class="strong">agrupa elementos</strong>
+                    para aplicar estilos em conjunto tornando o código mais organizado e bem estruturado;
+                </p>
+
+                <a href="#tags_semanticas"> Essa é uma tag < a>. <br> É usada para criar um <strong class="strong">
+                        hiperlink</strong>, que vai permitir com que os usuários naveguem de uma página para
+                        outra ou para uma seção específica da mesma página; <br> Ela precisa receber um atributo
+                        href que especifica para onde o link deve apontar.
+                </a>
+
+                <img src="" alt="<img> é uma tag de Mídia. Ela é considerada uma tag vazia por
+                    não conter nada dentro e, por isso, pode ser fechada nela mesma."
+                >
+                <p>Ela recebe dois atributos importantes:</p>
+                <ul class="exemplos">
+                    <li>
+                        <i class="i">src</i>: é um atributo obrigatório que especifica o <strong class="strong">
+                            caminho</strong> da imagem que vai ser usada;
+                    </li>
+                    <li>
+                        <i class="i">alt</i>: <strong class="strong">texto alternativo e descritivo</strong> que
+                        vai ser renderizado quando a imagem não estiver disponível ou quando a pessoa estiver
+                        usando um leitor de tela.
+                    </li>
+                </ul>
+
+                <p> Podemos também utilizar as Tags de Listas:
+                    <ul class="exemplos">
+                        <li>
+                            <i class="i">< ol>
+                            </i>: é usado para listas <strong class="strong">ordenadas</strong>
+                            (ou numeradas), pois necessitam uma ordem;
+                        </li>
+                        <li>
+                            <i class="i">< ul></i>: é usado para listas <strong class="strong">
+                            desordenadas</strong>, ou seja, não é necessária uma ordem;
+                        </li>
+                        <li>
+                            <i class="i"> < li>
+                            </i>: é usado para cada <strong class="strong">item</strong> dentro de
+                            uma lista.
+                        </li>
+                    </ul>
+                </p>
+
+                <p> Demais Tags podem ser pesquisadas em:
+                    <a class="documentacao" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">
+                        Documentação dos Elementos HTML
+                    </a>
+                </p>
+            </div>
+            <!----------------- // ----------------- // ----------------- // ----------------->
+
+
+            <h1 id="2_css" class="conteudos"> 2. CSS: </h1>
+
+            
+            <!----------------- PRIMEIRO CONTEÚDO ----------------->
+            <ol class="lista_main" type="a">
+                <li id="comuns" value="1"> Propriedades mais Comuns </li>
+            </ol>
+            <div class="container">
+                <div class="container_p">
+                    <p>
+                        As propriedades mais comuns são:
+                        <ul class="exemplos">
+                            <li>
+                                <i class="i">color</i>: define a cor do texto. Seus valores possíveis são:
+                                <ul class="exemplos">
+                                    <li>
+                                        <strong class="strong">nomes de cores</strong>: color = red;
+                                    </li>
+                                    <li>
+                                        <strong class="strong">códigos hexadecimais (HEX)</strong>: color: #FF0000;
+                                    </li>
+                                    <li>
+                                        <strong class="strong">valores do sistema RGB</strong>: color: rgb(255, 0, 0);
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <i class="i">background-color</i>: cor de fundo. Seus valores possíveis são os mesmo
+                                do <u>color</u>;
+                            </li>
+
+                            <li>
+                                <i class="i">border</i>: configura a borda dos elementos. Possui subpropriedades:
+                                <ul class="exemplos">
+                                    <li>
+                                        <strong class="strong">border-width</strong>: 2px;
+                                    </li>
+
+                                    <li>
+                                        <strong class="strong">border-style</strong>: dashed;
+                                    </li>
+
+                                    <li>
+                                        <strong class="strong">border-color</strong>: blue;
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <i class="i">text-align</i>: alinhamento de texto.
+                                <ul class="exemplos">
+                                    <li>
+                                        text-align: <strong class="strong">center</strong>;
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <i class="i">font-family</i>: fonte do texto (do mais específico para o mais
+                                genérico).
+                                <ul class="exemplos">
+                                    <li>
+                                        font-family: <strong class="strong">'Courier New', Courier,
+                                        monospace</strong>;
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <i class="i">background-image</i>: imagem de fundo. Seu valor é a url da
+                                imagem pretendida:
+                                <ul class="exemplos">
+                                    <li>
+                                        background-image: <strong class="strong">url("paper.gif")</strong>;
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <!----------------- // ----------------- // ----------------- // ----------------->
+
+
+            <!----------------- SEGUNDO CONTEÚDO ----------------->
+            <ol class="lista_main" type="a">
+                <li id="position" value="2"> Propriedades mais Comuns </li>
+            </ol>
+            <div class="container">
+                <div class="container_p">
+                    <p>
+                        A propriedade <strong class="strong">position</strong> do CSS é uma propriedade
+                        para posicionar elementos em uma página da web. Ele oferece quatro valores
+                        principais que controlam como os elementos são posicionados em relação ao fluxo
+                        normal do documento:
+                        <ul class="exemplos">
+                            <li>
+                                <i class="i">Static</i>: Este é o valor padrão. Elementos
+                                com esse valor são posicionados de acordo com o fluxo normal do documento.
+                                Ignora quaisquer propriedades de posicionamento (esquerda/direita/topo/fundo).
+                            </li>
+
+                            <li>
+                                <i class="i">Relative</i>: : Posiciona o elemento em relação à sua posição
+                                normal. Isso significa que você pode mover o elemento de sua posição normal
+                                usando as propriedades <strong class="strong">top</strong>,
+                                <strong class="strong">right</strong>, <strong class="strong">bottom</strong>
+                                e <strong class="strong">left</strong>. No entanto, o espaço ocupado pelo
+                                elemento permanece o mesmo no layout da página.
+                            </li>
+
+                            <li>
+                                <i class="i">Absolute</i>: Posiciona o elemento em relação ao seu elemento pai
+                                mais próximo que tem uma posição diferente de static. Se não houver nenhum
+                                elemento pai posicionado, ele será posicionado em relação ao < html>. Isso
+                                permite que você <strong class="strong">mova o elemento de forma absoluta</strong>,
+                                ignorando o fluxo do documento.
+                            </li>
+
+                            <li>
+                                <i class="i">Fixed</i>: posiciona o elemento em relação à <strong>janela de
+                                visualização do navegador</strong>. Isso significa que o elemento
+                                <strong class="strong">permanece fixo mesmo quando a página é rolada</strong>.
+                                É útil para cabeçalhos de página ou menus de navegação que você deseja manter
+                                sempre visíveis.
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <!----------------- // ----------------- // ----------------- // ----------------->
+
+
+            <!----------------- TERCEIRO CONTEÚDO ----------------->
+            <ol class="lista_main" type="a">
+                <li id="documentacao" value="2"> Documentação </li>
+            </ol>
+            <div class="container_p">
+                <p> Demais Propriedades podem ser pesquisadas em:
+                    <a class="documentacao" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">
+                        Documentação das Propriedades CSS
+                    </a>
+                </p>
+            </div>
+            <!----------------- // ----------------- // ----------------- // ----------------->
+
+
+        </main>
+    </section>
+
+
+    <footer>
+        <p> Feito com carinho por <strong id="Luise">Luise Marques</strong> </p>
+    </footer>
+
+</body>
+
+</html>

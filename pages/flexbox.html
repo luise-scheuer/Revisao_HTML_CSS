@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Satisfy&family=Teko:wght@300..700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="../styles.css">
+
+    <title> FlexBox </title>
+
+    <style>
+        #flexBox {
+            text-decoration: #9090ff underline;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <img id="logoSenac" src="../images/SENAC.png" alt="logo Senac">
+
+        <nav>
+            <a href="../index.html"> Conceitos </a>
+            <a href="../pages/tags.html"> Tags </a>
+            <a href="../pages/boxModel.html"> Box Model </a>
+            <a href="../pages/flexbox.html" id="flexBox"> FlexBox </a>
+        </nav>
+    </header>
+    
+    <aside>
+        <h1 id="aside_h1"> Sumário: </h1>
+        <ol id="sumario">
+            <li>
+                <a href="#justify"> JUSTIFY-CONTENT </a>
+                <ol class="subtitulos" type="a">
+                    <li value="1"> <a href="#start1"> Flex-Start </a> </li>
+                    <li value="2"> <a href="#end1"> Flex-End </a> </li>
+                    <li value="3"> <a href="#center1"> Center </a> </li>
+                    <li value="4"> <a href="#between"> Space-Between </a> </li>
+                    <li value="5"> <a href="#around"> Space-Around </a> </li>
+                    <li value="6"> <a href="#evenly"> Space-Evenly </a> </li>
+                </ol>
+            </li>
+            <li>
+                <a href="#align"> ALIGN-ITEMS </a>
+                <ol class="subtitulos" type="a">
+                    <li value="1"> <a href="#start2"> Flex-Start </a> </li>
+                    <li value="2"> <a href="#end2"> Flex-End </a> </li>
+                    <li value="3"> <a href="#center2"> Center </a> </li>
+                    <li value="4"> <a href="#stretch"> Stretch </a> </li>
+                </ol>
+            </li>
+        </ol>
+
+        <a href="#logoSenac">
+            <img id="subir" src="../images/subir.png" alt="Ir ao Início">
+        </a>
+    </aside>
+
+    <section>
+        <main>
+
+            <h1 id="justify" class="conteudos"> 1. JUSTIFY-CONTENT: </h1>
+            <div class="container">
+                <div class="container_p">
+                    <p>
+                        É responsável por definir como os elementos devem ser alinhados ao
+                        longo do eixo principal (de maneira <i class="i">vertical</i>)
+                    </p>
+                </div>
+            </div>
+
+            <!----------------- PRIMEIRO CONTEÚDO ----------------->
+            <ol class="lista_main" type="a">
+                <li id="start1 value="1"> Flex-Start </li>
+            </ol>
+            <div class="container_flex">
+                <div class="container_p">
+                    <p>
+                        Os elementos são alinhados no <strong class="strong">início</strong>
+                        do eixo principal.
+                    </p>
+                </div>
+                <div class="amostra">
+                    <img src="../images/images_CSS/start1.png" alt="Representação do Flex-Start">
+                    <div class="container1">
+                        <div class="caixa">
+                            <p> ITEM 1 </p>
+                        </div>
+                
+                        <div class="caixa">
+                            <p> ITEM 2 </p>
+                        </div>
+                
+                        <div class="caixa">
+                            <p> ITEM 3 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!----------------- // ----------------- // ----------------- // ----------------->
+
+
+            <!----------------- SEGUNDO CONTEÚDO ----------------->
+            <ol class="lista_main" type="a">
+                <li id="end1" value="2"> Flex-End </li>
+            </ol>
+            <div class="container_flex">
+                <div class="container_p">
+                    <p>
+                        Os elementos são alinhados no <strong class="strong">final</strong>
+                        do eixo principal.
+                    </p>
+                </div>
+                <div class="amostra">
+                    <img src="../images/images_CSS/end1.png" alt="Representação do Flex-End">
+                    <div class="container2">
+                        <div class="caixa">
+                            <p> ITEM 1 </p>
+                        </div>
+                
+                        <div class="caixa">
+                            <p> ITEM 2 </p>
+                        </div>
+                
+                        <div class="caixa">
+                            <p> ITEM 3 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!----------------- // ----------------- // ----------------- // ----------------->
+
+
+
+            <!----------------- TERCEIRO CONTEÚDO ----------------->
+            <ol class="lista_main" type="a">
+                <li id="center" value="3"> Center </li>
+            </ol>
+            <div class="container_flex">
+                <div class="container_p">
+                    <p>
+                        Os elementos são alinhados no <strong class="strong">centro</strong>.
+                    </p>
+                </div>
+                <div class="amostra">
+                    <img src="../images/images_CSS/center1.png" alt="Representação do ">
+
+                    <div class="container3">
+                        <div class="caixa">
+                            <p> ITEM 1 </p>
+                        </div>
+                
+                        <div class="caixa">
+                            <p> ITEM 2 </p>
+                        </div>
+                
+                        <div class="caixa">
+                            <p> ITEM 3 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!----------------- // ----------------- // ----------------- // ----------------->
+
+
+
+            <!----------------- QUARTO CONTEÚDO ----------------->
+            <ol class="lista_main" type="a">
+                <li id="between" value="4"> Space-Between </li>
+            </ol>
+            <div class="container_flex">
+                <div class="container_p">
+                    <p>
+                        O primeiro item é alinhado ao <strong class="strong">início</strong>, o último
+                        alinhado ao <strong class="strong">final</strong> e os demais <strong class="strong">
+                        distribuídos igualmente</strong> ao longo do eixo principal.
+                    </p>
+                </div>
+                <div class="amostra">
+                    <img src="../images/images_CSS/between.png" alt="Representação do ">
+                    
+                    <div class="container4">
+                        <div class="caixa">
+                            <p> ITEM 1 </p>
+                        </div>
+                
+                        <div class="caixa">
+                            <p> ITEM 2 </p>
+                        </div>
+                
+                        <div class="caixa">
+                            <p> ITEM 3 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!----------------- // ----------------- // ----------------- // ----------------->
+
+
+
+            <!----------------- QUINTO CONTEÚDO ----------------->
+            <ol class="lista_main" type="a">
+                <li id="around" value="5"> Space-Around </li>
+            </ol>
+            <div class="container_flex">
+                <div class="container_p">
+                    <p>
+                        Os elementos são <strong class="strong">distribuídos igualmente</strong> ao longo
+                        do eixo com espaços iguais ao redor de <strong>cada elemento</strong>.
+                    </p>
+                </div>
+                <div class="amostra">
+                    <img src="../images/images_CSS/around.png" alt="Representação do ">
+                    
+                    <div class="container5">
+                        <div class="caixa">
+                            <p> ITEM 1 </p>
+                        </div>
+                
+                        <div class="caixa">
+                            <p> ITEM 2 </p>
+                        </div>
+                
+                        <div class="caixa">
+                            <p> ITEM 3 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!----------------- // ----------------- // ----------------- // ----------------->
+
+
+            <!----------------- SEXTO CONTEÚDO ----------------->
+            <ol class="lista_main" type="a">
+                <li id="evenly" value="6"> Space-Evenly </li>
+            </ol>
+            <div class="container_flex">
+                <div class="container_p">
+                    <p>
+                        Os elementos são <strong class="strong">distribuídos igualmente</strong> ao longo
+                        do eixo com espaços iguais <strong>entre eles</strong>.
+                    </p>
+                </div>
+                <div class="amostra">
+                    <img src="../images/images_CSS/evenly.png" alt="Representação do ">
+                    
+                    <div class="container6">
+                        <div class="caixa">
+                            <p> ITEM 1 </p>
+                        </div>
+                
+                        <div class="caixa">
+                            <p> ITEM 2 </p>
+                        </div>
+                
+                        <div class="caixa">
+                            <p> ITEM 3 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!----------------- // ----------------- // ----------------- // ----------------->
+
+
+
+            <h1 id="align" class="conteudos"> 2. ALIGN-ITEMS: </h1>
+            <div class="container_flex">
+                <div class="container_p">
+                    <p>
+                        Usamos para alinhar os itens no eixo transversal (de maneira
+                        <i class="i">horizontal</i>).
+                    </p>
+                </div>
+            </div>
+
+
+            <!----------------- PRIMEIRO CONTEÚDO ----------------->
+            <ol class="lista_main" type="a">
+                <li id="start2" value="1"> Flex-Start </li>
+            </ol>
+            <div class="container_flex">
+                <div class="container_p">
+                    <p>
+                        Os elementos são alinhados no <strong class="strong">início</strong>
+                        do eixo transversal.
+                    </p>
+                </div>
+                <div class="amostra">
+                    <img src="../images/images_CSS/start2.png" alt="Representação do ">
+                    
+                    <div class="container7">
+                        <div class="caixa">
+                            <p> ITEM 1 </p>
+                        </div>
+                
+                        <div class="caixa">
+                            <p> ITEM 2 </p>
+                        </div>
+                
+                        <div class="caixa">
+                            <p> ITEM 3 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!----------------- // ----------------- // ----------------- // ----------------->
+
+
+            <!----------------- SEGUNDO CONTEÚDO ----------------->
+            <ol class="lista_main" type="a">
+                <li id="end2" value="2"> Flex-End </li>
+            </ol>
+            <div class="container_flex">
+                <div class="container_p">
+                    <p>
+                        Os elementos são alinhados no <strong class="strong">final</strong>
+                        do eixo transversal.
+                    </p>
+                </div>
+                <div class="amostra">
+                    <img src="../images/images_CSS/end2.png" alt="Representação do ">
+                    
+                    <div class="container8">
+                        <div class="caixa">
+                            <p> ITEM 1 </p>
+                        </div>
+                
+                        <div class="caixa">
+                            <p> ITEM 2 </p>
+                        </div>
+                
+                        <div class="caixa">
+                            <p> ITEM 3 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!----------------- // ----------------- // ----------------- // ----------------->
+
+
+            <!----------------- TERCEIRO CONTEÚDO ----------------->
+            <ol class="lista_main" type="a">
+                <li id="center2" value="3"> Center </li>
+            </ol>
+            <div class="container_flex">
+                <div class="container_p">
+                    <p>
+                        Os elementos são alinhados no <strong class="strong">centro</strong>.
+                    </p>
+                </div>
+                <div class="amostra">
+                    <img src="../images/images_CSS/center2.png" alt="Representação do Center">
+                    
+                    <div class="container9">
+                        <div class="caixa">
+                            <p> ITEM 1 </p>
+                        </div>
+                
+                        <div class="caixa">
+                            <p> ITEM 2 </p>
+                        </div>
+                
+                        <div class="caixa">
+                            <p> ITEM 3 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!----------------- // ----------------- // ----------------- // ----------------->
+
+
+            <!----------------- QUARTO CONTEÚDO ----------------->
+            <ol class="lista_main" type="a">
+                <li id="stretch" value="4"> Stretch </li>
+            </ol>
+            <div class="container_flex">
+                <div class="container_p">
+                    <p>
+                        Os elementos se <strong class="strong">estenderão por todo</strong> o eixo.
+                    </p>
+                </div>
+                <div class="amostra">
+                    <img src="../images/images_CSS/stretch.png" alt="Representação do Stretch">
+                    
+                    <div class="container10">
+                        <div class="caixa2">
+                            <p> ITEM 1 </p>
+                        </div>
+                
+                        <div class="caixa2">
+                            <p> ITEM 2 </p>
+                        </div>
+                
+                        <div class="caixa2">
+                            <p> ITEM 3 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!----------------- // ----------------- // ----------------- // ----------------->
+        </main>
+    </section>
+
+    <footer>
+        <p> Feito com carinho por <strong id="Luise">Luise Marques</strong> </p>
+    </footer>
+
+</body>
+</html>
